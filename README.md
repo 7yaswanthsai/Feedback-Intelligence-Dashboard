@@ -2,6 +2,7 @@
 
 Real-time mentor analytics platform with KPI scoring, sentiment analysis, AI-generated insights, and automated Google Sheets synchronization.
 
+![Feedback Intelligence Dashboard](assets/image.png)
 ---
 
 # Overview
