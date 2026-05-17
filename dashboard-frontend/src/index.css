@@ -1,0 +1,78 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+body {
+  background: radial-gradient(circle at 20% 10%,
+      rgba(59, 130, 246, 0.08),
+      transparent 40%),
+    radial-gradient(circle at 80% 90%,
+      rgba(16, 185, 129, 0.06),
+      transparent 40%),
+    #0b1220;
+}
+
+/* ─── Print / PDF stylesheet ─────────────────────────────────────── */
+@media print {
+
+  /* Hide sidebar, nav, buttons, toasts */
+  aside,
+  nav,
+  .no-print,
+  [data-no-print] {
+    display: none !important;
+  }
+
+  /* Reset background to white for print */
+  body,
+  html {
+    background: #fff !important;
+    color: #111 !important;
+  }
+
+  main {
+    padding: 0 !important;
+  }
+
+  /* Make cards print-friendly */
+  .rounded-2xl,
+  .rounded-xl {
+    border: 1px solid #e5e7eb !important;
+    background: #fff !important;
+    box-shadow: none !important;
+  }
+
+  /* Force text to dark on white */
+  .text-white {
+    color: #111 !important;
+  }
+
+  .text-gray-300,
+  .text-gray-400 {
+    color: #555 !important;
+  }
+
+  .text-blue-400 {
+    color: #2563eb !important;
+  }
+
+  .text-emerald-400 {
+    color: #059669 !important;
+  }
+
+  .text-red-400 {
+    color: #dc2626 !important;
+  }
+
+  .text-yellow-400 {
+    color: #d97706 !important;
+  }
+
+  /* Page breaks */
+  .page-break-before {
+    page-break-before: always;
+  }
+
+  .page-break-avoid {
+    page-break-inside: avoid;
+  }
+}

@@ -1,0 +1,10 @@
+backend/__pycache__
+venv
+dashboard-frontend/node_modules
+.env
+get_tree.py
+tree_output.txt
+backend/__init__.py
+credentials.json
+*.pem
+*.key
